@@ -1,0 +1,278 @@
+:root {
+    --primary-font: 'Arial', sans-serif;
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --accent-color: #758694;
+    --light-gray: #f4f4f4;
+    --dark-gray: #13131b;
+    --border-color: #ddd;
+    --padding: 15px;
+    --heading-size: 48px;
+    --text-size: 18px;
+    --container-width: 80%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+.container {
+    width: var(--container-width);
+    margin: auto;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: var(--padding) 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    background-image: url('images/index/DO_NickySouness-9311.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-size: auto;
+    width: auto;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: var(--heading-size);
+    font-weight: bold;
+}
+
+footer {
+    background-image: linear-gradient(var(--light-gray), var(--accent-color));
+    color: var(--dark-gray);
+    padding: 20px 0;
+}
+
+.footer-section {
+    margin: 10px 0;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.about-site {
+    padding: 50px 0;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.about-site h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.about-site p {
+    font-size: var(--text-size);
+    line-height: 1.6;
+    color: #555;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.submit-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.submit-form {
+    max-width: 600px;
+    width: 100%;
+    background-color: var(--light-gray);
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.submit-hero {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.submit-hero h2 {
+    font-size: var(--heading-size);
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* Стилі для галереї зберігаються без змін */
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.gallery-pic {
+    text-align: center;
+    max-width: 600px;
+}
+
+.gallery-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery-pic h3,
+.gallery-pic p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.gallery-hero {
+    background-color: #758694;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.gallery-section {
+    padding: 50px 0;
+}
+
+.gallery-section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.gallery-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.about-hero {
+    background-color: #758694;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.about-team {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.about-team h2 {
+    padding: 15px 0;
+}
+
+.about-team p {
+    padding: 10px 0;
+}
